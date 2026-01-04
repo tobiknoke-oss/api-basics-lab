@@ -34,3 +34,17 @@
 
 
 
+
+## Issue 2 – Statuscodes 400 vs. 404
+
+**404 Not Found**
+- Beispiel: GET https://jsonplaceholder.typicode.com/todos/999999
+- Bedeutung: Adresse/Ressource existiert nicht.
+
+**400 Bad Request**
+- Beispiel: GET https://httpbin.org/status/400
+- Bedeutung: Anfrage ist syntaktisch/inhaltlich ungültig.
+
+**200 OK**
+- Beispiel: GET https://jsonplaceholder.typicode.com/todos?userId=1
+- Bedeutung: Anfrage korrekt, Daten geliefert.
