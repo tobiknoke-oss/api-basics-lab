@@ -48,3 +48,17 @@
 **200 OK**
 - Beispiel: GET https://jsonplaceholder.typicode.com/todos?userId=1
 - Bedeutung: Anfrage korrekt, Daten geliefert.
+## Issue 3 – POST Request (Daten senden)
+
+**Endpoint:** https://jsonplaceholder.typicode.com/posts  
+**Methode:** POST  
+**Statuscode:** 201 Created
+
+**Was ist der Unterschied zu GET?**
+- GET: Daten holen (Request hat i. d. R. keinen Body)
+- POST: Daten senden (JSON steht im Body)
+
+**Was passiert bei 201?**
+- Der Server bestätigt: „Objekt wurde erstellt“
+- Antwort enthält oft eine neue `id`
+
