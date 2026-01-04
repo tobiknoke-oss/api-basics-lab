@@ -61,4 +61,18 @@
 **Was passiert bei 201?**
 - Der Server bestätigt: „Objekt wurde erstellt“
 - Antwort enthält oft eine neue `id`
+## Issue 4 – Headers verstehen
+
+**Content-Type**
+- Gibt an, in welchem Format der Request-Body gesendet wird.
+- Beispiel: application/json
+
+**Accept**
+- Gibt an, welche Antwortformate akzeptiert werden.
+- Beispiel: */*
+
+**Experiment**
+- Bei Content-Type ≠ application/json wurde der Body anders interpretiert.
+- Beobachtung: Antwort war reduziert (z. B. nur id: 101).
+
 
