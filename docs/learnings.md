@@ -75,4 +75,18 @@
 - Bei Content-Type ≠ application/json wurde der Body anders interpretiert.
 - Beobachtung: Antwort war reduziert (z. B. nur id: 101).
 
+## Issue 6 – Postman Tests (Assertions)
 
+- Postman kann Requests automatisch prüfen (Tests).
+- Tests laufen **nach** dem Request (Post-response).
+- Erster Basis-Test: Statuscode prüfen.
+- Beispiel:
+  - Erwartung: erfolgreicher GET-Request
+  - Test: Statuscode == 200
+- Nutzen: Fehler werden sofort erkannt, ohne manuelles Prüfen.
+
+- Weitere Tests:
+  - Prüfung, ob ein JSON-Feld existiert (property check).
+  - Prüfung des Datentyps (object).
+- Tests helfen, nicht nur „Erfolg“, sondern auch „korrekte Struktur“ sicherzustellen.
+- Mehrere Tests können pro Request kombiniert werden.
